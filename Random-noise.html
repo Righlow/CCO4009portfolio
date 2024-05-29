@@ -1,0 +1,53 @@
+---
+title: "Random-noise"
+date: 2024-05-29
+#technique:random and noise
+---
+<h1>variation: One </h1>
+<p>link here</p>
+
+<img src="/skills-github-pages/CC4009portfolio/index.html/RandomW.variation1.png" alt="alt text" width="600" height="100">
+
+
+
+<p>function setup() {
+  createCanvas(windowWidth, windowHeight);
+}
+
+function draw() {
+  background(200);
+  beginShape();
+  vertex(width, height);
+  vertex(0, height);
+  for(var i=0; i<numSamples; i++){
+    var vy=random(height);
+     var vy=height*noise(i/0.04,frameCount/150);
+    vertex(i*width/(numSamples-1), vy);
+  }
+  endShape(CLOSE);
+}
+</p>
+<section>
+<p>
+  In this post I played around with the Random walker and in this first variation simply on changed the number of var samples and as well as the noise which is set to 0.04.This is relatively low as noise refers to how the dirfferent points are spaced out on the from the range of the previous value.The closer the values are the smoother the random walker becomes</p>
+</section>
+
+
+
+<h2>variation: two</h2>
+
+<p>https://editor.p5js.org/Righlow/sketches/KuryDs5Ix</p>
+
+<p>weighted Random walker</p>
+
+ <p>code: </p>
+
+<p>development process</p>
+
+
+<h3>variation:three</h3>
+<p>https://editor.p5js.org/Righlow/sketches/93WDmkIqg</p>
+
+<p>Perlin noise</p>
+
+<p>code: </p>
